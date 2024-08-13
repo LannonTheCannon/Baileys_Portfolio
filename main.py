@@ -1,5 +1,4 @@
 # intro_to_streamlit_day_1
-# cd C:\Users\cvsio\Desktop\Streamlit_Web
 # streamlit run intro_to_streamlit_day_1.py
 import streamlit as st
 # src folder has all the functions
@@ -18,6 +17,7 @@ from src.wrap_10 import wrap_up
 def main():
     st.title("Introduction to Streamlit day 1")
     st.subheader(':grey[A lesson plan for beginner python programers!]')
+    st.write("Hello website")
     
     # add a sidebar
     st.sidebar.title(":notebook: Lesson section :notebook:")
