@@ -17,7 +17,7 @@ from src.wrap_10 import wrap_up
 def main():
     st.title("Introduction to Streamlit day 1")
     st.subheader(':grey[A lesson plan for beginner python programers!]')
-    st.write("Hello website")
+    
     
     # add a sidebar
     st.sidebar.title(":notebook: Lesson section :notebook:")
