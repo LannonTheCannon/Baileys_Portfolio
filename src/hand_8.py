@@ -1,16 +1,16 @@
 # hand_8.py
 import streamlit as st
+import secrets
 
 def hands_on():
     st.header(":eight:. :blue[Fun Hands on Activity]")
     st.write("Now its your turn to create a fun activity")
-    import random
     st.title("Guess the number game")
 
     # Intialize a var in a session state
     if "secret_number"  not in st.session_state:
         # generate a random number between 1 and 100
-        st.session_state["secret_number"] = random.randint(1,100)
+        st.session_state["secret_number"] = secrets.SystemRandom().randint(1,100)
     secret_num = st.session_state["secret_number"]
 
     # get the player's guess
